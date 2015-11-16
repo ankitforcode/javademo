@@ -59,7 +59,7 @@ RUN mvn clean install sakai:deploy -Dmaven.tomcat.home=/tomcat
 #configure mysql
 ADD ./mysql/my.conf /etc/mysql/my.conf
 
-#configure sakai
+##configure sakai
 ADD ./tomcat/sakai.properties /tomcat/sakai/sakai.properties
 
 ADD ./mysql/setup_db.sh /scripts/
