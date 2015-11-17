@@ -1,7 +1,9 @@
 FROM ubuntu:trusty
 
 #adds the add-apt-repo tool
-RUN apt-get install -y software-properties-common
+RUN apt-get update -qq && \
+	apt-get install -y software-properties-common && \
+	apt-get clean
 
 #install oracle java 8
 RUN add-apt-repository ppa:webupd8team/java
