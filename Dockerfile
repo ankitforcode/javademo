@@ -17,6 +17,7 @@ RUN wget http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.26/bin/apache-tomca
 RUN tar -zxvf apache-tomcat-8.0.26.tar.gz
 RUN mv apache-tomcat-8.0.26 tomcat
 
+#tomcat admin credentials
 ENV TOMCAT_PASS admin
 ENV CATALINA_HOME /opt/tomcat
 
